@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+
+
+sentence = "The dog ate my homework"
+for i,word in enumerate(sentence.split()):
+     print "Word #%d: %s" % (i, word)
+	 
+	 
+
+	 
+sentence = "2012-01-01	12:01	San Jose	Music	12.99	Amex"
+word =sentence.strip.split("\t")
+date, time, store, item, cost, payment = word
+print "{0}\t{1}".format(store,cost)
+
+	 sentence = "2012-01-01    12:01	San Jose	Music	12.99	Amex"
+words = sentence.split("\t")
+date,store,item, cost, payment = words
+print "{0}\t{1}".format(store,payment)
